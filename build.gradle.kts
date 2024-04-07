@@ -22,6 +22,8 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-core:2.17.0")
     implementation("com.fasterxml.jackson.core:jackson-annotations:2.17.0")
 
+    compileOnly("jakarta.websocket:jakarta.websocket-api:2.1.1")
+    implementation("org.apache.tomcat.embed:tomcat-embed-websocket:10.1.19")
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
