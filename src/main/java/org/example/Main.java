@@ -6,11 +6,15 @@ import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
+import org.example.service.DatabaseConnectionService;
 
 import java.io.File;
 
 public class Main {
     public static void main(String[] args) throws LifecycleException {
+        DatabaseConnectionService databaseConnectionService = DatabaseConnectionService.instance();
+        databaseConnectionService.getDataFromDatabase();
+
         Tomcat tomcat = new Tomcat();
         tomcat.enableNaming();
         tomcat.setPort(8080);

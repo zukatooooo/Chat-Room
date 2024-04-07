@@ -13,8 +13,11 @@ public class ChatRoom {
     int id;
     @Column(name = "name")
     String name;
-    @Column(name = "max-capacity")
+    @Column(name = "maxcapacity")
     int maxCapacity;
+
+    public ChatRoom() {
+    }
 
     public ChatRoom(int id, String name, int maxCapacity) {
         this.id = id;
