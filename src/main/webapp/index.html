@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>ChatRoom</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>RoomChat</h1>
+</div>
+
+<div class="container" id="rooms">
+</div>
+
+<div class="container">
+    <input type="button" onclick="add()" value="+">
+</div>
+
+<div class="modal1" id="modal">
+    <h2>New Room</h2>
+    <form>
+        <div>
+            <label for="chatName">Chat name:</label><br>
+            <input type="text" class="inp" id="chatName" name="chatName"><br>
+        </div>
+        <div>
+            <label for="amount">Max members:</label><br>
+            <input type="number" class="inp" id="amount" name="amount">
+        </div>
+        <input type="button" id="btn" value="Submit">
+    </form>
+</div>
+<div id="overlay"> </div>
+</body>
+
+</html>
