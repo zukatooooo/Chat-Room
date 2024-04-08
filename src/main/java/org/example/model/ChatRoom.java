@@ -36,4 +36,16 @@ public class ChatRoom {
     public int getMaxCapacity() {
         return maxCapacity;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }
 }
